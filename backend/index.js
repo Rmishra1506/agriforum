@@ -30,7 +30,10 @@ cloudinary.config({
     api_key: process.env.CLOUDINARY_API_KEY,
     api_secret: process.env.CLOUDINARY_API_SECRET
 });
-
+app.get("/", (req, res) => {
+    res.send("Backend deployed on Vercel is working!");
+  });
+  
 app.use(express.json())
 app.use(cors({origin:"http://localhost:5173",credentials:true}))
 app.use(cookieParser())
