@@ -12,7 +12,7 @@ const userRoute=require('./routes/users')
 const postRoute=require('./routes/posts')
 const commentRoute=require('./routes/comments')
 const likeRoutes = require('./routes/like'); 
-//database
+//databasefefefe
 app.use(cors({origin:"http://localhost:5173",credentials:true}))
 const connectDB=async()=>{
     try{
