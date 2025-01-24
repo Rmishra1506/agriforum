@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    font-family: "Poppins", sans-serif;
+  }
+.rm{
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dagriculture&psig=AOvVaw0lc_KLZu-Bq4tNDXTF0NIm&ust=1722101369937000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIigxOadxYcDFQAAAAAdAAAAABAK");
+  
+   }  
