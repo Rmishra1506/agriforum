@@ -32,7 +32,12 @@ cloudinary.config({
 });
 
 app.use(express.json())
-app.use(cors({origin:"http://localhost:5173",credentials:true}))
+app.use(cors({
+    origin: "*", // Allow all origins
+    credentials: true, // Allow credentials (cookies, authorization headers)
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // Allow all standard HTTP methods
+    allowedHeaders: "Origin, X-Requested-With, Content-Type, Accept, Authorization" // Allow all standard headers
+  }));
 app.use(cookieParser())
 app.use("/api/auth",authRoute)
 app.use("/api/users",userRoute)
